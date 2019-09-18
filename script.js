@@ -60,14 +60,19 @@ $(document).ready(function() {
         var n1500 = $("#n1500").text(); var n1000 = $("#n1000").text();
         var n750 = $("#n750").text();   var n500 = $("#n500").text(); 
         var n200 = $("#n200").text();   var n100 = $("#n100").text();
+        let newData = {
+            "amount": n500,
+            "volume": a50,
+            "pin": mtnPin(),
+            "expiry": "12/2020"
+        }
         $.ajax({
             type:'POST',
             url:'http://localhost:3000/posts',
             dataType: 'json',
+            data: newData,
             success: function(inPut){
-                var msg = "";
-               let voice = msg.append({"here": "going to word"}) 
-               return voice;
+                console.log(inPut)
 
                }
         });
