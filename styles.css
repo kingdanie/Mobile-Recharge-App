@@ -1,0 +1,16 @@
+#loginPage {
+  background-image: url();
+  background: no-repeat;
+}
+
+
+#form {
+  width: 30%;
+  margin: 15% auto;
+}
+#mar {
+  margin: 0 0 10px 0;
+}
+#marLR {
+  margin: 0 auto;
+}

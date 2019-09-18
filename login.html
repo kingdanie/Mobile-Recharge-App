@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="icon" type="image/gif" href="favicon.ico" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+
+    <title>Welcome To MTN Recharge Portal</title>
+  </head>
+  <body id="loginPage">
+    <div class="container">
+      <div>
+        <h2>everywhere you go</h2>
+      </div>
+      <form class="form-signin" id="form">
+        <h2 class="form-signin-heading" id="mar">Please sign in</h2>
+        <div id="mar">
+          <label for="txtEmail" class="sr-only">Email address</label>
+          <input
+            type="email"
+            id="userName"
+            class="form-control"
+            placeholder="Email address"
+            required
+            autofocus
+          />
+        </div>
+        <div id="mar">
+          <label for="txtPword" class="sr-only">Password</label>
+          <input
+            type="password"
+            id="passWord"
+            class="form-control"
+            placeholder="Password"
+            required
+          />
+        </div>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" value="remember-me" /> Remember me
+          </label>
+        </div>
+        <button class="btn btn-lg btn-dark" id="signin" type="submit">
+          Sign in
+        </button>
+      </form>
+
+      <form class="form-signin" id="form">
+        <h2 class="form-signin-heading" id="mar">Sign Up</h2>
+        <div id="mar">
+          <label for="name">Name</label>
+          <input
+            type="text"
+            id="userName"
+            class="form-control"
+            placeholder="Name"
+            required
+            autofocus
+          />
+        </div>
+        <div id="mar">
+          <label for="txtEmail">Email address</label>
+          <input
+            type="email"
+            id="userName"
+            class="form-control"
+            placeholder="Email address"
+            required
+            autofocus
+          />
+        </div>
+        <div id="mar">
+          <label for="txtPword">Password (6 or more characters)</label>
+          <input
+            type="password"
+            id="passWord"
+            class="form-control"
+            placeholder="Password"
+            required
+          />
+        </div>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" value="remember-me" /> Remember me
+          </label>
+        </div>
+        <button class="btn btn-lg btn-dark" id="signup" type="submit">
+          Signup
+        </button>
+      </form>
+    </div>
+    <!-- /container -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="script.js"></script>
+     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

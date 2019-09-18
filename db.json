@@ -1,0 +1,100 @@
+{
+  "admin": [
+    {
+      "id": 1,
+      "email": "daniedemola@mail.com",
+      "password": "decagon"
+    },
+    {
+      "id": 2
+    },
+    {
+      "id": 3
+    },
+    {
+      "id": 4
+    },
+    {
+      "id": 5
+    },
+    {
+      "id": 6
+    },
+    {
+      "id": 7
+    },
+    {
+      "id": 8
+    },
+    {
+      "id": 9
+    },
+    {
+      "id": 10
+    },
+    {
+      "id": 11
+    },
+    {
+      "id": 12
+    }
+  ],
+  "users": [
+    {
+      "firstName": "Dangote",
+      "lastName": "Abubakar",
+      "phoneNumber": "08130000000",
+      "email": "dangoteabu@gmail.com"
+    },
+    {
+      "firstName": "Emeka",
+      "lastName": "Njoku",
+      "phoneNumber": "08130100100",
+      "email": "obi1@gmail.com"
+    },
+    {
+      "firstName": "Olamide",
+      "lastName": "Badoo",
+      "phoneNumber": "08130120100",
+      "email": "olabanjo@gmail.com"
+    }
+  ],
+  "posts": [
+    {
+      "amount": "N1000",
+      "quantity": "500",
+      "pin": "27981232456347422",
+      "type": "Pin Code",
+      "userName": "",
+      "date": "09/12/2018",
+      "id": 1
+    },
+    {
+      "amount": "N500",
+      "quantity": "1000",
+      "pin": "6790073533823774",
+      "type": "Pin Code",
+      "userName": "",
+      "date": "01/01/2019",
+      "id": 2
+    },
+    {
+      "amount": "N200",
+      "quantity": "1000",
+      "pin": "49642920213905778",
+      "type": "Vouchers",
+      "userName": "",
+      "date": "01/01/2019",
+      "id": 4
+    },
+    {
+      "amount": "N100",
+      "quantity": "500",
+      "pin": "92067962162904083",
+      "type": "VTU",
+      "userName": "",
+      "date": "01/01/2019",
+      "id": 5
+    }
+  ]
+}
