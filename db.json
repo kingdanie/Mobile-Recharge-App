@@ -5,8 +5,7 @@
       "email": "daniedemola@mail.com",
       "password": "decagon"
     }
-      ],
- 
+  ],
   "posts": [
     {
       "amount": "N1000",
@@ -37,6 +36,21 @@
       "type": "VTU",
       "expiry": "12/2020",
       "id": 5
+    },
+    {
+      "id": 6
+    },
+    {
+      "id": 7
+    },
+    {
+      "id": 8
+    },
+    {
+      "id": 9
+    },
+    {
+      "id": 10
     }
   ]
 }

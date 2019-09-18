@@ -53,9 +53,30 @@ $(document).ready(function() {
 
     
     // populate the database
-    $("#signin").click(function(e){
+    $("#genPin").click(function(e){
+        var a15 = $("#1500").val(); var a10 = $("#1000").val();
+        var a75 =  $("#750").val(); var a50 = $("#500").val();
+        var a20 = $("#200").val(); var a10 = $("#100").val();
+        var n1500 = $("#n1500").text(); var n1000 = $("#n1000").text();
+        var n750 = $("#n750").text();   var n500 = $("#n500").text(); 
+        var n200 = $("#n200").text();   var n100 = $("#n100").text();
+        $.ajax({
+            type:'POST',
+            url:'http://localhost:3000/posts',
+            dataType: 'json',
+            success: function(inPut){
+                var msg = "";
+               let voice = msg.append({"here": "going to word"}) 
+               return voice;
+
+               }
+        });
+        console.log(n500);
         
-    }
+
+        
+    
+})
     
     
     
