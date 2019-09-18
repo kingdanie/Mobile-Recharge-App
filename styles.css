@@ -3,10 +3,17 @@
   background: no-repeat;
 }
 
+#adminPage {
+  width: 
+}
 
 #form {
   width: 30%;
   margin: 15% auto;
+}
+
+#border_rad {
+  border-radius: 50%
 }
 #mar {
   margin: 0 0 10px 0;

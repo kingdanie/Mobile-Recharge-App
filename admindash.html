@@ -60,92 +60,66 @@
           <ul class="nav nav-sidebar">
             <li class="active"><a href="#">Overview <span class="sr-only">(current)</span></a></li>
             <li><a href="#">Reports</a></li>
-            <li><a href="#">Analytics</a></li>
-            <li><a href="#">Export</a></li>
-          </ul>
-          <ul class="nav nav-sidebar">
-            <li><a href="">Nav item</a></li>
-            <li><a href="">Nav item again</a></li>
-            <li><a href="">One more nav</a></li>
-            <li><a href="">Another nav item</a></li>
-            <li><a href="">More navigation</a></li>
-          </ul>
-          <ul class="nav nav-sidebar">
-            <li><a href="">Nav item again</a></li>
-            <li><a href="">One more nav</a></li>
-            <li><a href="">Another nav item</a></li>
+            <li><a href="#" id="sortById">Sort by Id</a></li>
+            <li><a href="#" id="sortByAount">Sort by Amount</a></li>
           </ul>
         </div>
         <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
           <h1 class="page-header">Dashboard</h1>
 
-          <div class="placeholders request-form">
+          <div class="request-form">
+                <div class="form-group row" id="border_rad">
+                  <label for="colFormLabel" class="col-sm-2 col-form-label">N1500</label>
+                  <input type="number" id="amount"> 
+                </div>
                 <div class="form-group row">
-                        <label for="colFormLabel" class="col-sm-2 col-form-label">Type:</label>
-                        <div class="col-sm-6">
-                            <select class="custom-select" id="cards">
-                                    <option selected>Vouchers</option>
-                                    <option value="Recharge Cards">Recharge Cards</option>
-                                    <option value="E-Top Up">E-Top Up</option>
-                                    <option value="Transfer Code">Transfer Code</option>
-                            </select>
-                        </div>
+                        <label for="colFormLabel" class="col-sm-2 col-form-label">N1000</label>
+                        <input type="number" id="volume">
+                </div>
+                <div class="form-group row">
+                      <label for="colFormLabel" class="col-sm-2 col-form-label">N750</label>
+                      <input type="number" id="amount"> 
+                </div>
+                <div class="form-group row">
+                        <label for="colFormLabel" class="col-sm-2 col-form-label">N500</label>
+                        <input type="number" id="volume">
                 </div>
                  <div class="form-group row">
-                        <label for="colFormLabel" class="col-sm-2 col-form-label">Amount:</label>
-                        <div class="col-sm-6">
-                            <select class="custom-select" id="amounts">
-                                    <option selected>Amount</option>
-                                    <option value="N100">N100</option>
-                                    <option value="N200">N200</option>
-                                    <option value="N500">N500</option>
-                                    <option value="N750">N750</option>
-                                    <option value="N1000">N1000</option>
-                                    <option value="N1500">N1500</option>
-                            </select>
-                        </div>
+                        <label for="colFormLabel" class="col-sm-2 col-form-label">N200</label>
+                        <input type="number" id="amount"> 
                 </div>
                 <div class="form-group row">
-                        <label for="colFormLabel" class="col-sm-2 col-form-label">Volume:</label>
-                        <div class="col-sm-6">
-                            <!-- <select class="custom-select" id="volume">
-                                    <option selected>100</option>
-                                    <option value="2">200</option>
-                                    <option value="3">300</option>
-                                    <option value="5">500</option>
-                                    <option value="10">1000</option>
-                            </select> -->
-                            <input type="number" id="volume">
-                          </div>
+                        <label for="colFormLabel" class="col-sm-2 col-form-label">N100</label>
+                        <input type="number" id="volume">
                 </div>
-                <div class="form-group row">
+                <div class="row">
                 <label for="colFormLabel" class="col-sm-4 col-form-label"></label>
-                <button type="button" class="btn btn-primary col-sm-2 genBut">Generate Pin</button>
+                <button type="button" class="btn btn-primary col-sm-2" id="genBut"">Generate Pin</button>
                 </div>
             </div>
           </div>
 
           <h2 class="sub-header">Section title</h2>
-          <div class="table-responsive" style="margin-left:10%">
+          <div class="table-responsive" style="margin-left:10%"  style="width:100%">
             <table class="table table-striped">
               <thead>
                 <tr>
-                    <th id="date">Date</th>
-                    <th id="username">Name</th>
-                    <th id="type">Type</th>
+                    <th id="id">Id</th>
                     <th id="amount">Amount</th>
-                    <th id="quantity">Quantity</th>
                     <th id="pin">Pin</th>
-                    <th id="update">Update</th>
+                    <th id="expiry">Expiry</th>
+                    <th id="updateVal">Update Val</th>
+                    <th id="delete">Delete</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <td>1,002</td>
-                  <td>amet</td>
-                  <td>consectetur</td>
-                  <td>adipiscing</td>
-                  <td>elit</td>
+                  <td>1</td>
+                  <td>N1500</td>
+                  <td>349567752134574321</td>
+                  <td>07/20</td>
+                  <td><button id="valBtn" ></button></td>
+                  <td><button id="delBtn"></button></td>
                 </tr>
                 <tr>
                   <td>1,003</td>
@@ -161,29 +135,35 @@
                   <td>sem</td>
                   <td>at</td>
                 </tr>
-                <tr>
-                  <td>1,006</td>
-                  <td>nibh</td>
-                  <td>elementum</td>
-                  <td>imperdiet</td>
-                  <td>Duis</td>
-                </tr>
-                  <td>1,011</td>
-                  <td>eget</td>
-                  <td>nulla</td>
-                  <td>Class</td>
-                  <td>aptent</td>
-                </tr>
-                <tr>
-                  <td>1,012</td>
-                  <td>taciti</td>
-                  <td>sociosqu</td>
-                  <td>ad</td>
-                  <td>litora</td>
-                </tr>
+
               </tbody>
             </table>
           </div>
+                  <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#basicExampleModal">
+                Launch demo modal
+              </button> -->
+              
+              <!-- Modal -->
+              <div class="modal fade" id="basicExampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Card Info</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <ul class="info"></ul>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
         </div>
       </div>
 
