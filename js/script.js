@@ -1,7 +1,3 @@
-
-
-
-
 $(document).ready(function() {
 
     //verification
@@ -54,32 +50,78 @@ $(document).ready(function() {
     
     // populate the database
     $("#genPin").click(function(e){
-        var a15 = $("#1500").val(); var a10 = $("#1000").val();
+        var a150 = $("#1500").val(); var a100 = $("#1000").val(); 
         var a75 =  $("#750").val(); var a50 = $("#500").val();
         var a20 = $("#200").val(); var a10 = $("#100").val();
         var n1500 = $("#n1500").text(); var n1000 = $("#n1000").text();
         var n750 = $("#n750").text();   var n500 = $("#n500").text(); 
         var n200 = $("#n200").text();   var n100 = $("#n100").text();
+        // console.log(a100);
         let newData = {
             "amount": n500,
-            "volume": a50,
             "pin": mtnPin(),
             "expiry": "12/2020"
         }
-        $.ajax({
+        let data500 = $.ajax({
             type:'POST',
             url:'http://localhost:3000/posts',
             dataType: 'json',
             data: newData,
-            success: function(inPut){
-                console.log(inPut)
+            // success: function(inPut){
+            //     console.log(inPut)
 
-               }
+            //    }
         });
-        console.log(n500);
+        // console.log(a50);
+        for (i=0; i<a50.val; i++){
+         data500;
+        }        // console.log(n500);
         
 
         
+
+        //Update the table feed
+        function buildRows(cards){
+            var feed = "<tr>" + "<td>" + cards.id + "</td>" + "<td>" + cards.amount + "</td>" + "<td>" + cards.pin + "</td>"
+            +"<td>" + cards.expiry + "</td>"+ 
+            "<td>" +
+            "<button type='button' " +
+                "onclick='productGet(this);' " +
+                "class='btn btn-default' " +
+                "data-id='" + cards.ProductId + "'>" +
+                "<span class='glyphicon glyphicon-wrench' />"
+            + "</button>" +
+            "</td >" +
+            "<td>" +
+            "<button type='button' " +
+               "onclick='productDelete(this);' " +
+               "class='btn btn-default' " +
+               "data-id='" + cards.ProductId + "'>" +
+               "<span class='glyphicon glyphicon-remove' />" +
+            "</button>" +
+          "</td>" + "</>";
+          return feed;
+        }
+
+        //call get function
+        $.ajax({
+            type: 'GET',
+            url: 'http://localhost:3000/posts',
+            dataType: 'json',
+            success: function(cards){
+                let newValue = '';
+                $.each(cards, function(i, newData){
+    
+                //calling the function
+                let ans = buildRows(cards);
+                $('#productTable').append(ans);
+                });
+                $('#productTable').DataTable();     
+            },
+            error: function(){
+                alert("error loading data");
+            }
+          });
     
 })
     
